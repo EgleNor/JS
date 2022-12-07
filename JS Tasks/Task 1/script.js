@@ -21,8 +21,8 @@ getResult.addEventListener('click', (e) => {
 
   result.innerHTML =
     `
-    <h2>${kilograms} kg = ${lb} lb</h2>
-    <h2>${kilograms} kg = ${g} g</h2>
-    <h2>${kilograms} kg = ${oz} oz</h2>
+    <h2>${kilograms} kg = <span>${lb}</span> lb</h2>
+    <h2>${kilograms} kg = <span>${g}</span> g</h2>
+    <h2>${kilograms} kg = <span>${oz}</span> oz</h2>
     `
 });

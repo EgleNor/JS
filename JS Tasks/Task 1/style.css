@@ -63,3 +63,20 @@ form {
     font-size: 2em;
   }
 }
+
+/* Result style */
+
+h2 {
+  color: black;
+  padding: 5px;
+  font-size: 3rem;
+}
+
+#output {
+  width: 78%;
+  margin: 10px auto;
+}
+
+span {
+  color: green;
+}
