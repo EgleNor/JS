@@ -27,3 +27,20 @@
   margin-top: 50px;
   color: #333;
 }
+
+.cars {
+  font-size: 20px;
+  padding: 7px;
+  margin: 0 20px;
+}
+
+.brand {
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.models {
+  border: 1px solid grey;
+  padding: 5px;
+  color: grey;
+}

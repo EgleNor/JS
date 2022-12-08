@@ -8,3 +8,21 @@ pamatyti jo pateikto svorio konvertavimą į:
 Pastaba: rezultatas turi būti matomas pateikus formą ir atvaizduojamas
 <div id="output"></div> viduje. Gautus atsakymus stilizuokite naudojant CSS;
 ------------------------------------------------------------------- */
+const getResult = document.querySelector('#submit-btn');
+const result = document.querySelector('#output');
+
+getResult.addEventListener('click', (e) => {
+  e.preventDefault();
+  const kilograms = document.querySelector('#search').value;
+  result.innerHTML = '';
+  const lb = (kilograms * 2.2046).toFixed(2);
+  const g = (kilograms / 0.0010000).toFixed(2);
+  const oz = (kilograms * 35.274).toFixed(2);
+
+  result.innerHTML =
+    `
+    <h2><span>Pounds:</span> ${kilograms} kg = <span>${lb} lb</span></h2>
+    <h2><span>Grams:</span> ${kilograms} kg = <span>${g} g</span></h2>
+    <h2><span>Ounce:</span> ${kilograms} kg = <span>${oz} oz</span></h2>
+    `
+});
