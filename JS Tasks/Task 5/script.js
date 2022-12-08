@@ -28,9 +28,8 @@ function filterDogOwners(array) {
   const filteredArray =  array.filter(user => user.hasDog);
   const usersWithDog = filteredArray.map(user => user.name);
   console.log(usersWithDog);
-
-
 }
+
 filterDogOwners(users);
 
 // 2.
