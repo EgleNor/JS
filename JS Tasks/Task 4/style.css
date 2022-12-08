@@ -36,8 +36,11 @@
 
 .brand {
   font-weight: 600;
+  padding-top: 10px;
 }
 
 .models {
   border: 1px solid grey;
+  padding: 5px;
+  color: grey;
 }
