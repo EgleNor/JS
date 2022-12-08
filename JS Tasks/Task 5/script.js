@@ -9,7 +9,10 @@ atveju grąžins masyvą su "users", kurie yra pilnamečiai.
 -------------------------------------------------------------------------- */
 
 const users = [
-  { id: '1', name: 'John Smith', age: 20, hasDog: true },
+  { id: '1', 
+  name: 'John Smith', 
+  age: 20, 
+  hasDog: true },
   { id: '2', name: 'Ann Smith', age: 24, hasDog: false },
   { id: '3', name: 'Tom Jones', age: 31, hasDog: true },
   { id: '4', name: 'Rose Peterson', age: 17, hasDog: false },
@@ -19,3 +22,22 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+// 1.
+function filterDogOwners(array) {
+  const filteredArray =  array.filter(user => user.hasDog);
+  const usersWithDog = filteredArray.map(user => user.name);
+  console.log(usersWithDog);
+
+
+}
+filterDogOwners(users);
+
+// 2.
+function filterAdults(array) {
+  const adults = array.filter(user => user.age >= 18);
+  const nameAdults = adults.map(user => user.name);
+  console.log(nameAdults);
+}
+
+filterAdults(users);
