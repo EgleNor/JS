@@ -14,6 +14,7 @@ būti stilizuota su CSS ir būti responsive;
 const ENDPOINT = 'https://api.github.com/users';
 const button = document.querySelector('#btn');
 const result = document.querySelector('#output');
+result.setAttribute('class', 'profile')
 
 function showUsers(data) {
   result.innerHTML = '';
@@ -21,12 +22,14 @@ function showUsers(data) {
   data.forEach(item => {
     const picture = document.createElement('img');
     picture.src = item.avatar_url;
+    picture.setAttribute('class', 'image');
 
     const personsPicture = document.createElement('div');
     personsPicture.append(picture);
 
     const login = document.createElement('div');
     login.innerText = `${item.login}`;
+    login.setAttribute('class', 'name');
 
     const card = document.createElement('div');
     card.append(personsPicture, login);
